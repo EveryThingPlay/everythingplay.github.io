@@ -15,6 +15,9 @@ const statuses = [
   },{
     title: 'Unknown',
     value: 'unknown'
+  },{
+    title: 'Any',
+    value: null
   }]
 
 function handleFilters(){
@@ -41,7 +44,7 @@ const isShowApply = computed(()=> {
       >
         <option
         v-for="variant in statuses"
-        :key="variant.value"
+        :key="String(variant.value)"
         :value="variant.value"
         :selected="variant.value === statusModel"
         >
