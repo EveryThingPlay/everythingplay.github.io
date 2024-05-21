@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Episode, Character } from '@/types';
+import type { Character } from '@/types';
 
 defineProps<Character.CharacterCard>()
 </script>
